@@ -25,3 +25,7 @@ class Item
 end
 
 item1 = Item.new("Apple", "Red", 1000)
+
+p item1.brand
+p item1.color
+p item1.price = 1200
