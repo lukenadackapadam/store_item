@@ -5,27 +5,30 @@
 # soap = { brand: "Dial", color: "blue", price: 5 }
 
 class Item
+  attr_reader :brand, :color, :price
+  attr_writer :price
+
   def initialize(input_brand, input_color, input_price)
     @brand = input_brand
     @color = input_color
     @price = input_price
   end
 
-  def brand
-    @brand
-  end
+  # def brand
+  #   @brand
+  # end
 
-  def color
-    @color
-  end
+  # def color
+  #   @color
+  # end
 
-  def price
-    @price
-  end
+  # def price
+  #   @price
+  # end
 
-  def price=(input_price)
-    @price = input_price
-  end
+  # def price=(input_price)
+  #   @price = input_price
+  # end
 
   def info
     puts "The brand is #{brand}, the color is #{color}, and the price is $#{price}."
