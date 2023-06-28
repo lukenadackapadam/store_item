@@ -8,10 +8,10 @@ class Item
   attr_reader :brand, :color, :price
   attr_writer :price
 
-  def initialize(input_brand, input_color, input_price)
-    @brand = input_brand
-    @color = input_color
-    @price = input_price
+  def initialize(input_options)
+    @brand = input_options[:brand]
+    @color = input_options[:color]
+    @price = input_options[:price]
   end
 
   # def brand
@@ -35,7 +35,7 @@ class Item
   end
 end
 
-item1 = Item.new("Apple", "Red", 1000)
+item1 = Item.new({ brand: "Apple", color: "Red", price: 1000 })
 
 p item1.brand
 p item1.color
