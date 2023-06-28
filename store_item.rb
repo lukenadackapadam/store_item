@@ -10,4 +10,16 @@ class Items
     @color = input_color
     @price = input_price
   end
+
+  def brand
+    @brand
+  end
+
+  def color
+    @color
+  end
+
+  def price=(input_price)
+    @price = input_price
+  end
 end
