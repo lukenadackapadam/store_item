@@ -4,7 +4,7 @@
 
 # soap = { brand: "Dial", color: "blue", price: 5 }
 
-class Items
+class Item
   def initialize(input_brand, input_color, input_price)
     @brand = input_brand
     @color = input_color
@@ -23,3 +23,5 @@ class Items
     @price = input_price
   end
 end
+
+item1 = Item.new("Apple", "Red", 1000)
